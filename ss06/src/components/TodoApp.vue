@@ -10,10 +10,7 @@
         <button @click="confirmDelete(index)">Delete</button>
       </li>
     </ul>
-    <p
-      >Công việc đã hoàn thành: {{ completedTasks }}/{{ tasks.length }} công
-      việc</p
-    >
+    <p>Công việc đã hoàn thành: {{ completedTasks }} / {{ tasks.length }} công việc</p>
     <div v-if="showModal" class="modal">
       <p>Bạn có chắc chắn muốn xóa công việc này?</p>
       <button @click="deleteTask(taskToDelete)">Xóa</button>
@@ -22,42 +19,39 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      newTask: "",
-      tasks: JSON.parse(localStorage.getItem("tasks")) || [],
-      showModal: false,
-      taskToDelete: null,
-    };
-  },
-  computed: {
-    completedTasks() {
-      return this.tasks.filter((task) => task.completed).length;
-    },
-  },
-  methods: {
-    addTask() {
-      if (this.newTask.trim() !== "") {
-        this.tasks.push({ name: this.newTask, completed: false });
-        this.newTask = "";
-        this.saveTasks();
-      }
-    },
-    confirmDelete(index) {
-      this.taskToDelete = index;
-      this.showModal = true;
-    },
-    deleteTask(index) {
-      this.tasks.splice(index, 1);
-      this.saveTasks();
-      this.showModal = false;
-    },
-    saveTasks() {
-      localStorage.setItem("tasks", JSON.stringify(this.tasks));
-    },
-  },
+<script setup>
+import { ref, computed } from 'vue';
+
+const newTask = ref("");
+const tasks = ref(JSON.parse(localStorage.getItem("tasks")) || []);
+const showModal = ref(false);
+const taskToDelete = ref(null);
+
+const completedTasks = computed(() => {
+  return tasks.value.filter((task) => task.completed).length;
+});
+
+const addTask = () => {
+  if (newTask.value.trim() !== "") {
+    tasks.value.push({ name: newTask.value, completed: false });
+    newTask.value = "";
+    saveTasks();
+  }
+};
+
+const confirmDelete = (index) => {
+  taskToDelete.value = index;
+  showModal.value = true;
+};
+
+const deleteTask = (index) => {
+  tasks.value.splice(index, 1);
+  saveTasks();
+  showModal.value = false;
+};
+
+const saveTasks = () => {
+  localStorage.setItem("tasks", JSON.stringify(tasks.value));
 };
 </script>
 

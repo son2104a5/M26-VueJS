@@ -15,5 +15,5 @@ export default {
 </script>
 
 <style>
-/* Thêm các kiểu CSS tùy chỉnh ở đây */
+
 </style>
