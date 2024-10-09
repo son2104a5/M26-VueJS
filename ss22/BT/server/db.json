@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "id": 3,
+      "name": "Dưa hấu",
+      "image": "https://cdn.pastaxi-manager.onepas.vn/content/uploads/articles/Ho%C3%A0i%20Thu%20mkt/%E1%BA%A2nh%20chuy%C3%AAn%20m%E1%BB%A5c%20l%C3%A0m%20%C4%91%E1%BA%B9p/%E1%BA%A2nh%20T5/an-dua-hau-co-tac-dung-gi/an-dua-hau-co-tac-dung-gi.jpg",
+      "price": 30.99,
+      "quantity": 20
+    },
+    {
+      "id": 4,
+      "name": "Nho",
+      "image": "https://cdn.tgdd.vn/2020/12/CookProduct/1260-1200x643-2.jpg",
+      "price": 40.99,
+      "quantity": 30
+    },
+    {
+      "name": "Dâu tây",
+      "image": "https://cdn.nhathuoclongchau.com.vn/unsafe/https://cms-prod.s3-sgn09.fptcloud.com/dau_tay_bao_nhieu_calo_huong_dan_an_dau_tay_giam_can_dung_cach_3_112eddb8bc.jpg",
+      "price": 200,
+      "quantity": 2,
+      "id": 5
+    }
+  ]
+}
