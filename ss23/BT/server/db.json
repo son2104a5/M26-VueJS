@@ -1,0 +1,11 @@
+{
+  "students": [
+    {
+      "student_name": "Student 1",
+      "email": "std1@gmail.com",
+      "address": "Los Angeles",
+      "phone": "(+84) 1234567",
+      "id": 1
+    }
+  ]
+}
