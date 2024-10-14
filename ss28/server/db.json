@@ -1,0 +1,54 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Throwback Hip Bag",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj7o65czuo59cNoKO1tK3-SFQR5WyTnEU2Cw&s",
+      "price": 100,
+      "quantity": 10,
+      "description": "Handbag made from a beautiful leather"
+    },
+    {
+      "id": 2,
+      "name": "Lie Lie Bag",
+      "price": 200,
+      "quantity": 5,
+      "image": "https://lie-studio.de/cdn/shop/files/Leather_norma_black_1.png?v=1727864348&width=533",
+      "description": "Handbag made from a durable leather"
+    },
+    {
+      "id": 3,
+      "name": "Beautiful handbag",
+      "price": 300,
+      "quantity": 15,
+      "image": "https://mokobara.com/cdn/shop/files/The-Reign-Handbag_Starlight-1_dd42ca54-fcb7-4fce-b6b4-f65151ae09fd.jpg?v=1716287790&width=2048",
+      "description": "Handbag made from a beautiful leather"
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "productId": 1,
+      "name": "Throwback Hip Bag",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj7o65czuo59cNoKO1tK3-SFQR5WyTnEU2Cw&s",
+      "price": 100,
+      "quantity": 1
+    },
+    {
+      "productId": 2,
+      "name": "Lie Lie Bag",
+      "price": 200,
+      "quantity": 1,
+      "image": "https://lie-studio.de/cdn/shop/files/Leather_norma_black_1.png?v=1727864348&width=533",
+      "id": 2
+    },
+    {
+      "productId": 3,
+      "name": "Beautiful handbag",
+      "price": 300,
+      "quantity": 1,
+      "image": "https://mokobara.com/cdn/shop/files/The-Reign-Handbag_Starlight-1_dd42ca54-fcb7-4fce-b6b4-f65151ae09fd.jpg?v=1716287790&width=2048",
+      "id": 3
+    }
+  ]
+}

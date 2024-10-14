@@ -1,0 +1,28 @@
+{
+    "employees": [
+        {
+            "id": 1,
+            "name": "Nguyễn Văn A",
+            "email": "nva@gmail.com",
+            "dateOfBirth": "20/10/2020",
+            "address": "Ba Đình, Hà Nội",
+            "status": true
+        },
+        {
+            "id": 2,
+            "name": "Lê Thanh Tùng",
+            "email": "ltt@gmail.com",
+            "dateOfBirth": "05/12/1998",
+            "address": "Sơn Trà, Hà Nội",
+            "status": false
+        },
+        {
+            "id": 3,
+            "name": "Phan Văn Tùng",
+            "email": "pvt@gmail.com",
+            "dateOfBirth": "15/07/1995",
+            "address": "Đống Đa, Hà Nội",
+            "status": true
+        }
+    ]
+}
